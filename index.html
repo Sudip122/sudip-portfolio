@@ -3,117 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sudip Ghosh | Portfolio</title>
+  <title>Sudip Ghosh | Embedded Software Engineer</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+    .container-row {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+    .left-panel {
+      background-color: #161b22;
+      text-align: center;
+      padding: 2rem;
+    }
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      margin: 1rem auto;
+    }
+    .intro-text h1 {
+      font-size: 2rem;
+      color: #58a6ff;
+      margin: 0.5rem 0;
+    }
+    .tagline {
+      font-style: italic;
+      color: #8b949e;
+    }
+    section {
+      margin: 2rem 0;
+    }
+    h2 {
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #58a6ff;
+    }
+    .card {
+      background-color: #1c2128;
+      color: #f0f6fc;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+    }
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .btn {
+      background-color: #238636;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #2ea043;
+    }
+    @media (min-width: 769px) {
+      .container-row {
+        flex-direction: row;
+      }
+      .left-panel, .right-panel {
+        width: 50%;
+        padding: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="left-panel">
-  <div class="photo-block">
+<div class="container-row">
+  <div class="left-panel">
+    <div class="intro-text">
+      <h1>Hi, I am Sudip Ghosh</h1>
+    </div>
     <img src="images/sudip.jpg" alt="Sudip Ghosh" class="profile-img">
-    <p class="tagline">💡 Building intelligent embedded solutions that drive the future of mobility.</p>
-  </div>
-</div>
-
-
-  <div class="main-content">
-<section id="about">
-  <h1>About Me</h1>
-  <p>
-    I am a passionate and detail-oriented software engineer with over 3.3 years of hands-on experience in C/C++ development, AUTOSAR architecture, and ADAS (Advanced Driver Assistance Systems). I specialize in building scalable and safety-compliant embedded solutions for next-generation vehicles. My goal is to contribute to innovative automotive technologies that enhance road safety, automation, and in-cabin intelligence while continuously growing as a technology leader.
-  </p>
-  <div class="btns">
-    <a href="#experience" class="btn">Experience</a>
-  <a href="#education" class="btn">Education</a>
-  <a href="#skills" class="btn">Skills</a>
-  <a href="assets/Sudip_Ghosh_Resume.pdf" class="btn" download>📄 Resume</a>
-</div>
-
-  </div>
-</section>
-<section id="experience">
-  <h2>Professional Experience</h2>
-
-  <div class="card">
-    <h3>VWN ID BUZZ AD 2.0 Automated Driving Functions</h3>
-    <p><strong>Company:</strong> Harman Connected Services Pvt. Ltd. | April 2022 – Present</p>
-    <p><strong>Role:</strong> Junior C/C++ Developer</p>
-    <p><strong>Platform:</strong> AUTOSAR Environment using C/C++</p>
-    <p><strong>Tools:</strong> VS Code, WSL, GIT, Parasoft, Bitbucket, GTEST, JIRA, EA, CodeBeamer, CMake</p>
-
-    <p><strong>Description:</strong></p>
-    <p>
-      Application Software (ASW) development for OEM modules in the Volkswagen Project.
-      VWN is building the next iteration of the ID. BUZZ autonomous vehicle for series production, supporting development of Autonomous driving-specific features.
-      This includes collecting, consolidating, storing, relaying, and reporting data. It is the first homologated AD series vehicle without a safety driver.
-    </p>
-
-    <p><strong>Roles & Responsibilities:</strong></p>
-    <ul>
-      <li>Understanding system requirements using CodeBeamer</li>
-      <li>Led development for Vehicle Motion Control (VMC) in ADAS using AUTOSAR SWC and C/C++</li>
-      <li>Achieved 100% MCDC code coverage using GTest</li>
-      <li>Addressed MISRA/Parasoft issues; followed ASPICE safety guidelines</li>
-      <li>Performed Low-Level Design (LLD) using Enterprise Architect (EA)</li>
-      <li>Collaborated with clients and architecture teams for design reviews</li>
-      <li>Refactored post-release code for improved quality</li>
-      <li>Participated in client-facing presentations and critical delivery checkpoints</li>
-      <li>Resolved bugs and testing tickets for VMC module</li>
-    </ul>
-  </div>
-</section>
-
-<section id="skills">
-  <h2>Technical Skills</h2>
-
-  <div class="card">
-    <ul>
-      <li><strong>Languages:</strong> C/C++, Java</li>
-      <li><strong>Scripting:</strong> HTML, CSS</li>
-      <li><strong>Frameworks:</strong> Google Test, CMake, AUTOSAR (SWC Layer)</li>
-      <li><strong>Development Tools:</strong> VS Code, Eclipse, WSL, Git, Bitbucket</li>
-      <li><strong>Design Tools:</strong> Enterprise Architect (EA)</li>
-      <li><strong>Testing Tools:</strong> Parasoft, Jenkins, CodeSonar</li>
-      <li><strong>Requirement/Tracking:</strong> Code Beamer, JIRA</li>
-      <li><strong>Databases:</strong> MySQL</li>
-      <li><strong>Technologies:</strong> ADAS, SDLC, STLC, MISRA Guidelines</li>
-      <li><strong>OS/Platforms:</strong> Windows, Linux</li>
-      <li><strong>Office Tools:</strong> MS Excel, PowerPoint, Word, SharePoint</li>
-    </ul>
-  </div>
-</section>
-
-<section id="education">
-  <h2>Education</h2>
-
-  <div class="card">
-    <h3>Dr. B. C. Roy Engineering College</h3>
-    <p>Durgapur, West Bengal</p>
-    <p><strong>B.Tech in Electronics and Communication Engineering</strong> | August 2018 – June 2022</p>
-    <p>CGPA: 9.19 / 10</p>
+    <p class="tagline">🚗 Embedded C++ Developer | ADAS & AUTOSAR Specialist | Real-time Systems Enthusiast</p>
   </div>
 
-  <div class="card">
-    <h3>Lachipur Binapani High School</h3>
-    <p>Paschim Medinipur, West Bengal</p>
-    <p><strong>Higher Secondary</strong> | June 2016 – June 2018</p>
-    <p>Percentage: 80.80%</p>
-  </div>
+  <div class="right-panel">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a results-driven Embedded Software Engineer with 3+ years of experience developing safety-critical ADAS applications for automotive platforms. I specialize in C/C++, AUTOSAR SWC architecture, and embedded real-time systems, and have contributed to Volkswagen's ID. BUZZ autonomous driving project.
+      </p>
+      <div class="btns">
+        <a href="#education" class="btn">Education</a>
+        <a href="#experience" class="btn">Experience</a>
+        <a href="#skills" class="btn">Skills</a>
+        <a href="assets/Sudip_Ghosh_Resume.pdf" class="btn" download>📄 Download Resume</a>
+      </div>
+    </section>
 
-  <div class="card">
-    <h3>Lachipur Binapani High School</h3>
-    <p>Paschim Medinipur, West Bengal</p>
-    <p><strong>Secondary</strong> | Jan 2014 – June 2016</p>
-    <p>Percentage: 75.85%</p>
-  </div>
-</section>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Dr. B. C. Roy Engineering College</h3>
+        <p>Durgapur, West Bengal</p>
+        <p><strong>B.Tech in Electronics and Communication Engineering</strong></p>
+        <p>GPA: 9.19 / 10 | Aug 2018 – June 2022</p>
+      </div>
+    </section>
 
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <h3>Harman Connected Services Pvt. Ltd.</h3>
+        <p><strong>Duration:</strong> April 2022 – Present</p>
+        <p><strong>Project:</strong> VWN ID BUZZ AD 2.0 Automated Driving Functions</p>
+        <p><strong>Role:</strong> Junior C/C++ Developer</p>
+        <p><strong>Platform:</strong> AUTOSAR Environment using C/C++</p>
+        <p><strong>Tools:</strong> VS Code, WSL, GIT, Parasoft, Bitbucket, Unit Test using GTEST, JIRA, EA, Code Beamer, CMake</p>
+        <p><strong>Description:</strong> Developing ASW for OEM modules in Volkswagen’s ID. BUZZ autonomous series vehicle, enabling AD functions for data acquisition, consolidation, storage, relay, and reporting. Supported homologation of the first SAE Level 4 vehicle without a safety driver.</p>
+        <p><strong>Roles & Responsibilities:</strong></p>
+        <ul>
+          <li>Understanding System Requirement Analysis from Code Beamer</li>
+          <li>Led development for VMC feature of ADF/ADAS using C/C++ in AUTOSAR SWC</li>
+          <li>Achieved 100% Code Coverage (MCDC) using GTest</li>
+          <li>Resolved MISRA/Parasoft issues, ensured ASPICE compliance</li>
+          <li>Executed LLD using EA; collaborated on architecture/client enhancements</li>
+          <li>Refactored code post-implementation to enhance quality</li>
+          <li>Contributed to releases and presented code reviews to clients</li>
+          <li>BUG-Fixing: VMC ticket resolution by testing team</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Programming Languages:</strong> C, C++, Java</li>
+          <li><strong>Embedded Platforms:</strong> AUTOSAR (SWC Layer), ADAS, MISRA C/C++ Compliance</li>
+          <li><strong>Tools & Frameworks:</strong> VS Code, Eclipse, WSL, Git, Bitbucket, Parasoft, Google Test (GTest), Jenkins, CMake, Code Sonar</li>
+          <li><strong>Design & Requirement Tools:</strong> Enterprise Architect (EA), CodeBeamer, JIRA</li>
+          <li><strong>Technologies:</strong> SDLC, STLC, ASPICE, Functional Safety</li>
+          <li><strong>Web & Scripting:</strong> HTML, CSS</li>
+          <li><strong>Database:</strong> MySQL</li>
+          <li><strong>Operating Systems:</strong> Windows, Linux</li>
+          <li><strong>Productivity Tools:</strong> MS Excel, SharePoint, PowerPoint</li>
+        </ul>
+      </div>
+    </section>
 
     <section id="contact">
-      <h2>Contact Me</h2>
-      <p>📧 sudip9691@gmail.com</p>
-      <p>📞 +91 8388972014</p>
-      <p><a href="https://www.linkedin.com/in/sudip-ghosh-0b079b16a/" target="_blank">🔗 LinkedIn</a></p>
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> +91-8388972014 &nbsp; | &nbsp;
+      <strong>Email:</strong> <a href="mailto:sudip9691@gmail.com">sudip9691@gmail.com</a> &nbsp; | &nbsp;
+      <a href="https://www.linkedin.com/in/sudip-ghosh-0b079b16a/" target="_blank">LinkedIn</a> &nbsp; | &nbsp;
     </section>
   </div>
 </div>
